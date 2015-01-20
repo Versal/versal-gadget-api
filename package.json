@@ -2,9 +2,12 @@
   "repository": "https://github.com/Versal/versal-gadget-api",
   "scripts": {
     "test": "karma start --browsers Firefox --single-run",
-    "build": "myth -c styles/index.css versal-gadget-theme.css"
+    "build": "npm run buildStyles && npm run buildScripts",
+    "buildStyles": "myth -c styles/index.css versal-gadget-theme.css",
+    "buildScripts": "browserify src/player-api.js -o versal-player-api.js -s VersalPlayerAPI"
   },
   "devDependencies": {
+    "browserify": "^8.1.1",
     "karma": "^0.12.19",
     "karma-chai": "^0.1.0",
     "karma-cli": "0.0.4",
