@@ -332,8 +332,6 @@ var PlayerAPI = function(options){
 
 PlayerAPI.prototype = Object.create(EventEmitter.prototype);
 
-PlayerAPI.prototype.on = PlayerAPI.prototype.addListener;
-PlayerAPI.prototype.off = PlayerAPI.prototype.removeListener;
 PlayerAPI.prototype.addEventListener = PlayerAPI.prototype.addListener;
 PlayerAPI.prototype.removeEventListener = PlayerAPI.prototype.removeListener;
 
