@@ -38,7 +38,6 @@ In you gadget directory, run `bower install --save versal-gadget-api`
 Add the following to the `<head>` of your gadget's `versal.html`:
 
 ```
-  <script src="bower_components/eventEmitter/EventEmitter.js"></script>
   <script src="bower_components/versal-gadget-api/versal-player-api.js"></script>
 ```
 
