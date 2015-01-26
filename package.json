@@ -4,7 +4,7 @@
     "test": "npm run build && karma start --browsers Firefox --single-run",
     "build": "npm run buildStyles && npm run buildScripts",
     "buildStyles": "myth -c styles/index.css versal-gadget-theme.css",
-    "buildScripts": "browserify src/player-api.js -o versal-player-api.js -s VersalPlayerAPI"
+    "buildScripts": "browserify src/player-api.js -o versal-player-api.js"
   },
   "devDependencies": {
     "browserify": "^8.1.1",
