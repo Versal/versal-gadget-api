@@ -173,3 +173,5 @@ PlayerAPI.prototype.assetUrl = function(id){
 };
 
 module.exports = PlayerAPI;
+
+window.VersalPlayerAPI = PlayerAPI;
