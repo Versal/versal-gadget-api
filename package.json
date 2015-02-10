@@ -1,6 +1,4 @@
 {
-  "name": "versal-gadget-api",
-  "version": "0.0.9",
   "repository": "https://github.com/Versal/versal-gadget-api",
   "scripts": {
     "test": "npm run build && karma start --browsers Firefox --single-run",
