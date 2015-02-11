@@ -460,7 +460,8 @@ PlayerAPI.prototype.error = function(data){
 
 PlayerAPI.prototype.requestAsset = function(data, callback){
   if(!data.attribute) {
-    data.attribute = '__asset__';
+    var seed = Math.random().toString(36).substring(7);
+    data.attribute = '__asset__' + seed;
   }
   // TODO: remove this after assets are communicated from the player
   // in a dedicated event
