@@ -71,7 +71,7 @@ describe 'supported commands', ->
     assert.equal message.data.message, 'foo'
 
   it 'requestAsset', ->
-    papi.requestAsset { type: 'image' }
+    papi.requestAsset { type: 'image', attribute: '__asset__' }
 
     expectedMessage = {
       event: 'requestAsset',
