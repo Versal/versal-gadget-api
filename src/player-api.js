@@ -53,6 +53,8 @@ PlayerAPI.prototype.handleMessage = function(evt) {
 
     if(message.event == 'environmentChanged') {
       this.assetUrlTemplate = message.data.assetUrlTemplate;
+      this.userId = message.data.userId;
+      this.sessionId = message.data.sessionId;
     }
   }
 };
