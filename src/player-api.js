@@ -15,6 +15,13 @@ var PlayerAPI = function(options){
   this._assetCallbacks = {};
 
   if(typeof window != 'undefined'){
+    window.addEventListener('message', this.handleMessage.bind(this));
+
+    window.addEventListener('DOMContentLoaded', function(){
+      // To prevent scrolling within iframe gadgets
+      document.body.style.overflow = 'hidden';
+    });
+
     if(options && options.debug){
       window.addEventListener('message', function(evt){
         if(evt.data && evt.data.event) {
@@ -22,7 +29,6 @@ var PlayerAPI = function(options){
         }
       });
     }
-    window.addEventListener('message', this.handleMessage.bind(this));
   }
 };
 

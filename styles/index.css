@@ -22,7 +22,6 @@
 }
 
 html, body {
-  overflow: hidden;
   word-wrap: break-word;
   background: var(--white);
   color: var(--gray);
