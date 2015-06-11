@@ -17,9 +17,11 @@ In your gadget directory, run `bower install --save versal-gadget-api webcompone
 Then add the following to the `<head>` of your your gadget's `versal.html`:
 
 ```
-  <script src="bower_components/webcomponentsjs/webcomponentsjs-lite.min.js"></script>
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
   <link rel="import" href="bower_components/versal-gadget-api/versal-gadget-api.html">
 ```
+
+Then listen for the `WebComponentsReady` event on window before referencing `VersalGadgetAPI` (See https://github.com/webcomponents/webcomponentsjs#webcomponentsready)
 
 ### Vanilla JS/CSS
 
