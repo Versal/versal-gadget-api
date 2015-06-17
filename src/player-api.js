@@ -61,6 +61,7 @@ PlayerAPI.prototype.handleMessage = function(evt) {
       this.assetUrlTemplate = message.data.assetUrlTemplate;
       this.userId = message.data.userId;
       this.sessionId = message.data.sessionId;
+      this.apiUrl = message.data.apiUrl;
     }
   }
 };
