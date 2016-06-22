@@ -1,0 +1,9 @@
+{
+  "slackChannel": "#frontend",
+  "team": [
+    { "github": "possibilities", "slack": "mike" },
+    { "github": "thrivingkings", "slack": "daniel" },
+    { "github": "dmcguinness",   "slack": "dmcguinness" },
+    { "github": "rjz",           "slack": "rjz" }
+  ]
+}
