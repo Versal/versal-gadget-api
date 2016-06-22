@@ -65,7 +65,6 @@ The gadget communicates with the course player via events sent over a `postMessa
 * get and set persistent gadget configuration data: the attributes (configured by the course author) and the learner state (for each learner)
 * let the authors upload images and videos to the Versal platform
 * use some standard visual features of the Versal course player ("empty gadget" and "gadget error" views, property sheets, and asset upload dialog)
-* store question/answer data and perform scoring (for quizzes and other challenges)
 
 More details about the lifecycle of the gadget are found in the **Reference guide**
 
