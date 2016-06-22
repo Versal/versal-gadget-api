@@ -9,8 +9,6 @@ module.exports = function(config) {
       'versal-gadget-api/test/versal-player-api-spec.coffee',
 
       'underscore/underscore.js',
-      'versal-gadget-api/versal-challenges-api.js',
-      'versal-gadget-api/test/versal-challenges-api-spec.js'
     ],
     reporters: ['progress'],
     port: 9876,
