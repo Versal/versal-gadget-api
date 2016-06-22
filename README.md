@@ -252,6 +252,14 @@ Example: `playerApi.on('editableChanged', function(attrs){...})`
 
 The callback receives an object of the form `{editable: true/false}`. The value of `editable` describes the new editable state for the gadget. Accordingly, the gadget should switch its visual state to editing (the author's view) or to the learner's view.
 
+#### `recordAssessmentAttempt` (private)
+
+Records an assessment attempt.
+
+Example: `playerApi.recordAssessmentAttempt(name, data)`
+
+The `data` is an object describing that activity event.
+
 ## versal-gadget-theme.css
 
 Add to the `<head>` of your gadget's `versal.html`:
