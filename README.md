@@ -120,9 +120,13 @@ playerApi.setPropertySheetAttributes({
 
 Presently the player supports the following data types in property sheets:
 
-* `Text`, `Number`, `TextArea`, `Checkbox`, `Color`: these types need no options.
+* `Text`, `Number`, `TextArea`, `Checkbox`, `Color`, `SectionHeader`: these types need no options.
 
 Example: `{ type: 'TextArea' }`
+
+* `SectionHeader`, adds a read-only header to display the relevance of adjacent options
+
+Example: `{ type: 'SectionHeader', title: 'Specific options' }`
 
 *   `Checkboxes`, `Radio`, `Select`: these types take an array of `options`, representing the possible selection items. The `Select` type is a drop-down listbox.
 
