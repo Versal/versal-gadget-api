@@ -160,6 +160,10 @@ PlayerAPI.prototype.track = function(name, _data){
   this.sendMessage('track', data);
 };
 
+PlayerAPI.prototype.recordAssessmentAttempt = function(attrs){
+  this.sendMessage('recordAssessmentAttempt', attrs);
+};
+
 PlayerAPI.prototype.error = function(data){
   this.sendMessage('error', data);
 };

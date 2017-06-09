@@ -57,6 +57,12 @@ describe 'supported commands', ->
       data: { foo: 'bar' }
     assert postMessage.calledWith expectedMessage, '*'
 
+  it 'recordAssessmentAttempt', ->
+    papi.recordAssessmentAttempt { foo: 'bar'}
+
+    expectedMessage = { event: 'recordAssessmentAttempt', data: { foo: 'bar' } }
+    assert postMessage.calledWith expectedMessage, '*'
+
   it 'track', ->
     papi.track 'done', { foo: 'bar'}
 
