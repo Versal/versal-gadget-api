@@ -159,6 +159,12 @@ Example of using `Tags`:
 }
 ```
 
+#### `setRouterState`
+
+Update router state in player.
+
+Example: `playerApi.setRouterState({ courseId: 'course_id', lessonId: 'lesson_id', sectionId: 'section_id' })`
+
 #### `error`
 
 Tell the player to show a placeholder that indicates an error.
