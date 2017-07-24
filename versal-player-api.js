@@ -456,6 +456,10 @@ PlayerAPI.prototype.setPropertySheetAttributes = function(attrs){
   this.sendMessage('setPropertySheetAttributes', attrs);
 };
 
+PlayerAPI.prototype.setRouterState = function(attrs) {
+  this.sendMessage('setRouterState', attrs);
+};
+
 PlayerAPI.prototype.track = function(name, _data){
   var data = { '@type': name };
   Object.keys(_data).forEach(function(key){
