@@ -57,10 +57,10 @@ describe 'supported commands', ->
       data: { foo: 'bar' }
     assert postMessage.calledWith expectedMessage, '*'
 
-  it 'setRouterState', ->
-    papi.setRouterState { courseId: '1', lessonId: '2', sectionId: '3' }
+  it 'patchRouterState', ->
+    papi.patchRouterState { courseId: '1', lessonId: '2', sectionId: '3' }
 
-    expectedMessage = { event: 'setRouterState', data: { courseId: '1', lessonId: '2', sectionId: '3' } }
+    expectedMessage = { event: 'patchRouterState', data: { courseId: '1', lessonId: '2', sectionId: '3' } }
     assert postMessage.calledWith expectedMessage, '*'
 
   it 'track', ->
