@@ -159,11 +159,11 @@ Example of using `Tags`:
 }
 ```
 
-#### `setRouterState`
+#### `patchRouterState`
 
 Update router state in player.
 
-Example: `playerApi.setRouterState({ courseId: 'course_id', lessonId: 'lesson_id', sectionId: 'section_id' })`
+Example: `playerApi.patchRouterState({ courseId: 'course_id', lessonId: 'lesson_id', sectionId: 'section_id' })`
 
 #### `error`
 
