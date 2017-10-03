@@ -161,9 +161,15 @@ Example of using `Tags`:
 
 #### `patchRouterState`
 
-Update router state in player.
+Update current "router state" in player.
 
 Example: `playerApi.patchRouterState({ courseId: 'course_id', lessonId: 'lesson_id', sectionId: 'section_id' })`
+
+#### `updateFinishCourseActionRouterState`
+
+A "router state" object describing where to send learners when they finish taking a course. The learner will be sent to the "routing state" described when they click "finish course" on the last lesson of current course.
+
+Example: `playerApi.updateFinishCourseActionRouterState({ courseId: 'course_id', lessonId: 'lesson_id', sectionId: 'section_id' })`
 
 #### `error`
 

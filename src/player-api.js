@@ -156,6 +156,10 @@ PlayerAPI.prototype.patchRouterState = function(attrs) {
   this.sendMessage('patchRouterState', attrs);
 };
 
+PlayerAPI.prototype.updateFinishCourseActionRouterState = function(attrs) {
+  this.sendMessage('updateFinishCourseActionRouterState', attrs);
+};
+
 PlayerAPI.prototype.track = function(name, _data){
   var data = { '@type': name };
   Object.keys(_data).forEach(function(key){
